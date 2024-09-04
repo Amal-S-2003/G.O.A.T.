@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", system-ui;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #111;
+    color: white;
+    overflow-x: hidden;
+}
+#cursor{
+    width:15px;
+    height:15px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 99;
+}
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 3vh 10vh;
+    align-items: center;
+    border-bottom: #fff 1px solid;
+}
+#navbar h1{
+    font-size: 6vh;
+}
+#navbar ul{
+text-transform: uppercase;
+font-weight: 600;
+list-style: none;
+display: flex;
+gap: 10vh;
+cursor: pointer;
+}
+
+#navbar li:hover{
+color:red;
+scale: 1.1;
+transition: 0.5s;
+}
+#home{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10vh;
+}
+#home #name{
+    width: 40%;
+
+}
+#home h2{
+    font-size: 12vh;
+    font-weight: 700;
+}
+
+#home p{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#home #goat{
+    width: 50%;
+}
+
+/* banner */
+#banner{
+    height: 100%;
+    display: flex;
+    gap: 50px;
+}
+#banner img{
+    /* width: 500px; */
+    height: 500px;
+}
+
+#page2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    gap: 50px;
+}
+
+#row{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+#page2 img{
+    width: 250px;
+    height: auto;
+}
