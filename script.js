@@ -57,17 +57,29 @@ gsap.from("#goat", {
   duration: 4,
   transform: "translateX(500%)",
 });
-gsap.from("#page2 #row #image" , {
+gsap.from("#page2 #row #image", {
   x: "10",
   y: "1000",
-  opacity:0,
-  scale:0,
-  stagger:0.5,
+  opacity: 0,
+  scale: 0,
+  stagger: 0.5,
   scrollTrigger: {
     scroller: body,
-    markers: true,
-    start: "bottom 0",
-    top:"top -100%"
+    // markers: true,
+    start: "bottom 50%",
+    top: "top -100%",
+  },
+});
+gsap.from("#page2  #gallery", {
+  x: "10",
+  opacity: 0,
+  scale: 0,
+  stagger: 1.5,
+  scrollTrigger: {
+    scroller: body,
+    // markers: true,
+    start: "bottom 50%",
+    top: "top -100%",
   },
 });
 // gsap.from("#image",{
